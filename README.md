@@ -59,6 +59,25 @@ npm run build
 部门数据
 ![部门数据](https://images.gitee.com/uploads/images/2021/0617/185802_34330eb4_7523882.png)
 
+## 说明
+
+>注：上述界面有三处导入，这里需要做一下说明
+
+导入用户，需要 `excel` 文件至少有 **`姓名`** **`工号`** 两列
+
+导入学生，需要 `excel` 文件至少有以下列
+
+- **学号**
+- **姓名**
+- **性别**
+- **学院**
+- **行政班级**
+- **年级**
+
+导入部门，需要 `excel` 文件至少有 **`单位`** 列
+
+注：以上数据都是写死的，如需修改，可打开 `/src/utils/tools.js` 文件即可看到
+
 ## 鸣谢
 
 - 开源项目 [vue-antd-admin](https://gitee.com/iczer/vue-antd-admin.git) , 感谢[iczer](https://gitee.com/iczer)大佬
