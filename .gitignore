@@ -1,0 +1,10 @@
+# Develop Folders
+/.idea
+/.vscode
+/.gitee/
+
+# Other Folders
+/dist
+
+# File
+/package-lock.json
