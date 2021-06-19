@@ -9,7 +9,7 @@ module.exports = {
   logoutUrl: `${BASE_URL}/user/logout`, // 退出登录接口
   refreshTokenUrl: `${BASE_URL}/user/refreshToken`, // 刷新Token接口
   getUserRoutesUrl: `${BASE_URL}/user/getUserRoute`, // 获取用户菜单路由接口
-  changeUserNameUrl: `${BASE_URL}/user/changeUserName`, // 修改用户姓名
+  changeUserInfoUrl: `${BASE_URL}/user/changeUserInfo`, // 修改用户信息
   getQRCodeUrl: `${BASE_URL}/user/getQRCode`, // 获取小程序二维码
   checkScanQRCodeUrl: `${BASE_URL}/user/checkScanQRCode`, // 校验扫码结果
 

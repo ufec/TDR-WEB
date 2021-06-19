@@ -25,7 +25,7 @@
 <script>
 import PageLayout from '@/layouts/PageLayout';
 import { mapGetters } from 'vuex';
-import { changeUserName,logout } from '@/services/user';
+import { changeUserInfo,logout } from '@/services/user';
 import { removeAuthorization } from '@/utils/request';
 
 export default {
@@ -69,7 +69,7 @@ export default {
                 }else{
                     this.submitStatus = true;
                     this.user.nick_name = this.form.nick_name;
-                    changeUserName({ 
+                    changeUserInfo({ 
                         id: this.user.id, 
                         nick_name: this.user.nick_name,
                         password: this.form.password

@@ -1,4 +1,4 @@
-import {loginUrl, logoutUrl, refreshTokenUrl, changeUserNameUrl, getQRCodeUrl, checkScanQRCodeUrl} from './api';
+import {loginUrl, logoutUrl, refreshTokenUrl, changeUserInfoUrl, getQRCodeUrl, checkScanQRCodeUrl} from './api';
 import {request, METHOD} from '@/utils/request';
 
 /**
@@ -33,8 +33,8 @@ export async function refreshUserToken() {
  * @param {*} param 
  * @returns 
  */
-export async function changeUserName(param) {
-  return request(changeUserNameUrl, METHOD.POST, param);
+export async function changeUserInfo(param) {
+  return request(changeUserInfoUrl, METHOD.POST, param);
 }
 
 /**
@@ -58,7 +58,7 @@ export default {
   login,
   logout,
   refreshUserToken,
-  changeUserName,
+  changeUserInfo,
   getQRCode,
   checkScanQRCode,
 }
