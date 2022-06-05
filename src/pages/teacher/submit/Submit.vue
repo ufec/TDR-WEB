@@ -874,6 +874,7 @@ export default {
 			this.submitStatus = true;
 			this.$refs.dailyForm.validate(valid => {
 				if (!valid) {
+					this.submitStatus = false;
 					return false;
 				}
 				this.form.postDateTemp = undefined;
