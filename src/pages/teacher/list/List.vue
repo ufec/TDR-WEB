@@ -58,6 +58,12 @@ const columns = [
 		customRender: (text) => text + "老师",
 	},
 	{
+		title: "上课时间",
+		dataIndex: "post_date",
+		align: "center",
+		customRender: (e) => moment(Number(e)).format("YYYY-MM-DD"),
+	},
+	{
 		title: "提交时间",
 		dataIndex: "submit_time",
 		align: "center",
@@ -116,6 +122,7 @@ export default {
 						teacher: respMsg.data[i]['teacher_name'],
 						submit_time: respMsg.data[i]['submit_time'],
 						update_time: respMsg.data[i]['update_time'],
+						post_date: respMsg.data[i]['post_date'],
 					})
 				}
 				setTimeout(() => {
